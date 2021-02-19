@@ -3,7 +3,7 @@ defmodule Validators.ProductsInputValidator do
     if products |> Enum.empty?() do
       raise ArgumentError,
         message:
-          "Oops! It seems your emails list is empty. Put some product(s) data into it and try again"
+          "Oops! It seems your products list is empty. Put some product(s) data into it and try again"
     end
 
     products
