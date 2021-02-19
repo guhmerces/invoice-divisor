@@ -4,7 +4,7 @@ defmodule InvoiceDivisor do
   """
 
   @doc """
-  This module is responsible for make the most igualitary possible division of a total invoice value by the numbers of emails received.
+  This module is responsible for make the most egalitarian possible division of a total invoice value by the numbers of emails received.
   The last emails always receive the remaining cents from invoice division result.
 
   ## Examples
