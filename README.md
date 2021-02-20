@@ -1,12 +1,13 @@
 # InvoiceDivisor
 
-This small application make the most egalitarian possible division between a invoice value and the numbers of emails received
+This small application make the most egalitarian possible division of an invoice value for the emails received
+For my first week learning Elixir, I thought it was a great idea to start with this challenge. Before anything, it was very fun and a opportunity to learn a little about this eloquent language.
 
 ## Considerations
 
 The application receives a list of Maps of products and a list of emails.
 The last emails always receive the remaining cents from the invoice division result.
-
+This is my first week learning Elixir, 
 ## Installation
 
  1. Install Elixir and Erlang in case you haven't (this projects contains a .tool-version file and if you have asdf installed you can just run `asdf install` at the root of this project).
@@ -21,18 +22,18 @@ First, create a list of Maps that represents products containing theirs respecti
 iex> products_list = [
       %{
         name: "RTX 2080 T.I",
-        price: 546_183,
+        price: 546183,
         qty: 2
       },
       %{
         name: "Intel Core i7",
-        price: 161_245,
+        price: 161245,
         qty: 1
       }
     ]
 ```
 
-Now should create a list of emails:
+Now, you should create a list of emails:
 
 ```elixir
 iex> emails = [
@@ -43,7 +44,7 @@ iex> emails = [
       ]
 ```
 
-To get the result, call the function InvoiceDivisor.per_user like above:
+To get the result, call the function like above:
 
 ```elixir
 iex> products_list |> InvoiceDivisor.per_user(emails)
