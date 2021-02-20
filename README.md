@@ -1,13 +1,14 @@
 # InvoiceDivisor
 
-This small application make the most egalitarian possible division of an invoice value for the emails received
+This small application make the most egalitarian possible division of an invoice value for the emails received.
+
 For my first week learning Elixir, I thought it was a great idea to start with this challenge. Before anything, it was very fun and a opportunity to learn a little about this eloquent language.
 
 ## Considerations
 
 The application receives a list of Maps of products and a list of emails.
 The last emails always receive the remaining cents from the invoice division result.
-This is my first week learning Elixir, 
+
 ## Installation
 
  1. Install Elixir and Erlang in case you haven't (this projects contains a .tool-version file and if you have asdf installed you can just run `asdf install` at the root of this project).
