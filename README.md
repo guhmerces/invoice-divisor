@@ -9,5 +9,52 @@ The last emails always receive the remaining cents from the invoice division res
 
 ## Installation
 
- 1. Install Elixir and Erlang in case you haven't already.
- 2. Run `mix` to Invokes the default task (mix run) in a project
+ 1. Install Elixir and Erlang in case you haven't (this projects contains a .tool-version file and if you have asdf installed you can just run `asdf install` at the root of this project).
+ 3. Run `mix` to Invokes the default task (mix run) in a project.
+ 4. Run `iex -S mix` to use IEx with Mix
+
+## Running the app
+
+First, create a list of Maps that represents products containing theirs respective name, quantity and price. See the exemple above:
+
+```elixir
+iex> products_list = [
+      %{
+        name: "RTX 2080 T.I",
+        price: 546_183,
+        qty: 2
+      },
+      %{
+        name: "Intel Core i7",
+        price: 161_245,
+        qty: 1
+      }
+    ]
+```
+
+Now should create a list of emails:
+
+```elixir
+iex> emails = [
+          "foo@example.com",
+          "bar@example.com",
+          "hello@example.com",
+          "world@example.com"
+      ]
+```
+
+To get the result, call the function InvoiceDivisor.per_user like above:
+
+```elixir
+iex> products_list |> InvoiceDivisor.per_user(emails)
+```
+
+The output for this exemple:
+```elixir
+    [
+        %{"foo@email.com": 313402},
+        %{"bar@email.com": 313403},
+        %{"hello@email.com": 313403},
+        %{"world@email.com": 313403}
+    ]
+```
