@@ -17,7 +17,7 @@ The last emails always receive the remaining cents from the invoice division res
 
 ## Running the app
 
-First, create a list of Maps that represents products containing theirs respective name, quantity and price. See the exemple above:
+First, create a list of Maps that represents products containing their respectives names, quantities and prices. See the example above:
 
 ```elixir
 iex> products_list = [
