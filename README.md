@@ -1,8 +1,8 @@
-# InvoiceDivisor
+# InvoiceDivisor 
 
-This small application make the most egalitarian possible division of an invoice value for the emails received.
+This small application makes the most egalitarian possible division of an invoice value for the emails received.
 
-For my first week learning Elixir, I thought it was a great idea to start with this challenge. Before anything, it was very fun and a opportunity to learn a little about this eloquent language.
+For my first week learning Elixir, I thought it was a great idea to start with this challenge I found. Before anything, it was very fun and a opportunity to learn a little about this eloquent language.
 
 ## Considerations
 
